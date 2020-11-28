@@ -1,0 +1,78 @@
+openapi: 3.0.0
+info:
+  title: EnterpriseAuth
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000/enterprise_auth/v1'
+    description: local
+  - url: 'https://api.simula-works.com/enterprise_auth/v1'
+    description: Prd
+  - url: 'https://api-stg.simula-works.com/enterprise_auth/v1'
+    description: Stg
+  - url: 'https://api-dev.simula-works.com/enterprise_auth/v1'
+    description: Dev
+paths:
+  /sign_up:
+    post:
+      summary: Sign Up
+      operationId: post-sign_up
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmployeeWithToken.yaml'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                employee:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                    password:
+                      type: string
+                  required:
+                    - email
+                    - password
+  /sign_in:
+    post:
+      summary: Sign In
+      operationId: post-sign_in
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmployeeWithToken.yaml'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                employee:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                    password:
+                      type: string
+                  required:
+                    - email
+                    - password
+components:
+  schemas:
+    EmployeeWithToken.yaml:
+      title: EmployeeWithToken.yaml
+      type: object
+      properties:
+        employee:
+          $ref: ../models/Employee.v1.yaml
+        token:
+          type: string
