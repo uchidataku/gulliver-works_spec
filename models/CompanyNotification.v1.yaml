@@ -8,8 +8,6 @@ properties:
   content:
     type: string
     example: XXさんからメッセージが届きました。
-  company:
-    $ref: ./Company.v1.yaml
   created_at:
     type: string
     format: date-time
@@ -22,6 +20,5 @@ properties:
 required:
   - id
   - content
-  - company
   - created_at
   - is_read

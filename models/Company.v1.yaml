@@ -26,7 +26,7 @@ properties:
     type: string
     example: 03-1234-5678
   capital:
-    type: number
+    type: integer
     example: 1520
   is_listed:
     type: boolean

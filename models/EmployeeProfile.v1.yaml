@@ -37,8 +37,9 @@ properties:
     type: string
     format: date
     description: ''
-  employee:
-    $ref: ./Employee.v1.yaml
+  biography:
+    type: string
+    example: 自己PR/紹介
 required:
   - id
   - first_name
@@ -50,4 +51,4 @@ required:
   - postal_code
   - address
   - date_of_birth
-  - employee
+  - biography

@@ -8,8 +8,6 @@ properties:
   content:
     type: string
     example: XXさんからスカウトが届きました。
-  account:
-    $ref: ./Account.v1.yaml
   created_at:
     type: string
     format: date-time
@@ -22,6 +20,5 @@ properties:
 required:
   - id
   - content
-  - account
   - created_at
   - is_read

@@ -18,5 +18,8 @@ properties:
     type: array
     items:
       $ref: ./EmploymentStatus.v1.yaml
+  account:
+    $ref: ./Account.v1.yaml
 required:
   - id
+  - account

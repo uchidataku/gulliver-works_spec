@@ -27,11 +27,11 @@ properties:
   job_summary:
     type: string
     example: Ruby on Railsを使ったバックエンド開発
-  starts_at:
+  since_date:
     type: string
     format: date
     example: '2019-08-01'
-  ends_at:
+  until_date:
     format: date
     example: '2020-05-01'
     type: string
@@ -46,5 +46,5 @@ required:
   - position
   - annual_income
   - management_experience
-  - starts_at
+  - since_date
   - name
