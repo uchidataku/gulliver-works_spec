@@ -20,7 +20,7 @@ properties:
       - verified
     default: unspecified
   profile:
-    $ref: ./Profile.v1.yaml
+    $ref: ./AccountProfile.v1.yaml
   work_histories:
     type: array
     items:
