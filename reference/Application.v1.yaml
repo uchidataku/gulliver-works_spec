@@ -616,11 +616,11 @@ paths:
                     job_summary:
                       type: string
                       example: Ruby on Railsを使ったバックエンド開発
-                    since:
+                    since_date:
                       type: string
                       format: date
                       example: '2019-08-01'
-                    until:
+                    until_date:
                       format: date
                       example: '2020-05-01'
                       type: string
@@ -676,11 +676,11 @@ paths:
                     faculty:
                       type: string
                       example: 情報コミュニケーション学部
-                    starts_at:
+                    since_date:
                       type: string
                       format: date
                       example: 2008-04
-                    ends_at:
+                    until_date:
                       type: string
                       format: date
                       example: 2012-03
@@ -690,7 +690,7 @@ paths:
                       enum:
                         - graduate_school
                         - university
-                        - community_college
+                        - vocational_school
                         - junior_college
                         - high_school
                       description: 「大学院」「大学」「専門学校」「短期大学」「高校」
@@ -765,11 +765,11 @@ paths:
                     job_summary:
                       type: string
                       example: Ruby on Railsを使ったバックエンド開発
-                    since:
+                    since_date:
                       type: string
                       format: date
                       example: '2019-08-01'
-                    until:
+                    until_date:
                       format: date
                       example: '2020-05-01'
                       type: string
@@ -783,7 +783,7 @@ paths:
                     - position
                     - annual_income
                     - management_experience
-                    - since
+                    - since_date
                     - name
         description: ''
   '/accounts/{account_id}/academic_histories':
@@ -834,11 +834,11 @@ paths:
                     faculty:
                       type: string
                       example: 情報コミュニケーション学部
-                    starts_at:
+                    since_date:
                       type: string
                       format: date
                       example: 2008-04
-                    ends_at:
+                    until_date:
                       type: string
                       format: date
                       example: 2012-03
@@ -848,14 +848,14 @@ paths:
                       enum:
                         - graduate_school
                         - university
-                        - community_college
+                        - vocational_school
                         - junior_college
                         - high_school
                       description: 「大学院」「大学」「専門学校」「短期大学」「高校」
                   required:
                     - name
-                    - starts_at
-                    - ends_at
+                    - since_date
+                    - until_date
                     - type
         description: ''
   '/accounts/{account_id}/profile':
@@ -926,6 +926,9 @@ paths:
                     birth_of_date:
                       type: string
                       format: date
+                    biography:
+                      type: string
+                      example: 自己PR/紹介
                   required:
                     - first_name
                     - last_name
@@ -936,6 +939,8 @@ paths:
                     - postal_code
                     - address
                     - birth_of_date
+                    - biography
+        description: ''
     patch:
       summary: アカウントのプロフィールを更新する
       operationId: patch-accounts-account_id-profile
@@ -999,11 +1004,10 @@ paths:
                       example: daily_conversation
                     birth_of_date:
                       type: string
-                otp_token:
-                  type: string
-                  description: 二段階認証
-              required:
-                - otp_token
+                      format: date
+                    biography:
+                      type: string
+                      example: 自己PR/紹介
         description: ''
   /occupation_main_categories:
     get:

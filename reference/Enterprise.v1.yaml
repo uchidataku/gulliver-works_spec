@@ -748,6 +748,9 @@ paths:
                     birth_of_date:
                       type: string
                       format: date
+                    biography:
+                      type: string
+                      example: 自己PR/紹介
                   required:
                     - first_name
                     - last_name
@@ -758,6 +761,7 @@ paths:
                     - postal_code
                     - address
                     - birth_of_date
+                    - biography
   /occupation_main_categories:
     get:
       summary: 職種一覧を取得する
