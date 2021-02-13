@@ -5,11 +5,11 @@ info:
 servers:
   - url: 'http://localhost:3000/enterprise/v1'
     description: local
-  - url: 'https://api.simula-works.com/enterprise/v1'
+  - url: 'https://api.gulliver-works.com/enterprise/v1'
     description: Prd
-  - url: 'https://api-stg.simula-works.com/enterprise/v1'
+  - url: 'https://api-stg.gulliver-works.com/enterprise/v1'
     description: Stg
-  - url: 'https://api-dev.simula-works.com/enterprise/v1'
+  - url: 'https://api-dev.gulliver-works.com/enterprise/v1'
     description: Dev
 paths:
   /companies:

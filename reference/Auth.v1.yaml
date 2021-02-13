@@ -5,11 +5,11 @@ info:
 servers:
   - url: 'http://localhost:3000/auth/v1'
     description: Local
-  - url: 'https://api-dev.simula-works.com/auth/v1'
+  - url: 'https://api-dev.gulliver-works.com/auth/v1'
     description: Dev
-  - url: 'https://api-stg.simula-works.com/auth/v1'
+  - url: 'https://api-stg.gulliver-works.com/auth/v1'
     description: Stg
-  - url: 'https://api.simula-works.com/auth/v1'
+  - url: 'https://api.gulliver-works.com/auth/v1'
     description: Prd
 paths:
   /sign_in:
