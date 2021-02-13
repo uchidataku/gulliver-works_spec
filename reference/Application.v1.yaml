@@ -874,7 +874,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ../models/Profile.v1.yaml
+                $ref: ../models/AccountProfile.v1.yaml
       operationId: get-accounts-account_id-profile
     post:
       summary: アカウントのプロフィールを作成する
@@ -945,7 +945,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ../models/Profile.v1.yaml
+                $ref: ../models/AccountProfile.v1.yaml
       requestBody:
         content:
           application/json:

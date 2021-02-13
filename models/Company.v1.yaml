@@ -47,10 +47,6 @@ properties:
   average_age:
     type: integer
     example: 28
-  features:
-    type: array
-    items:
-      $ref: ./Feature.v1.yaml
   business_summary:
     type: string
     example: 事業概要
