@@ -13,11 +13,11 @@ properties:
   since_date:
     type: string
     format: date
-    example: 2008-04
+    example: '2008-04-01'
   until_date:
     type: string
     format: date
-    example: 2012-03
+    example: '2012-03-01'
   type:
     type: string
     example: university
@@ -34,3 +34,4 @@ required:
   - since_date
   - until_date
   - type
+description: dateの日付は月初で統一
