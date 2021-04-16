@@ -1,7 +1,7 @@
 title: WorkHistory
 type: object
 x-examples: {}
-description: ''
+description: dateの日付は月初で統一
 properties:
   id:
     type: string
