@@ -502,6 +502,24 @@ paths:
                   required:
                     - employee_id
                     - content
+  '/messages/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: メッセージを取得する
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ../models/Message.v1.yaml
+      operationId: get-messages-id
   '/companies/{company_id}/notifications':
     parameters:
       - schema:
