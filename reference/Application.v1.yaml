@@ -499,7 +499,7 @@ paths:
             application/json:
               schema:
                 $ref: ../models/Message.v1.yaml
-      operationId: get-accounts-account_id-rooms-room_id-messages-id
+      operationId: get-messages-id
   '/accounts/{account_id}/applicants':
     parameters:
       - schema:
