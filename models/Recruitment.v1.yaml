@@ -23,25 +23,17 @@ properties:
   qualification_requirement:
     type: string
     example: ・大卒以上　・40歳未満
-  is_public:
-    type: boolean
-    default: 'true'
-    example: 'true'
   company:
     $ref: ./Company.v1.yaml
-  employment_statuses:
-    type: array
-    items:
-      $ref: ./EmploymentStatus.v1.yaml
   status:
     type: string
     enum:
       - active
       - inactive
       - draft
+    default: active
 required:
   - id
   - title
-  - is_public
   - company
   - status

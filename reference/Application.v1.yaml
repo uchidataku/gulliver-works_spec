@@ -72,59 +72,6 @@ paths:
               schema:
                 $ref: ../models/Recruitment.v1.yaml
       operationId: get-recruitments-id
-    patch:
-      summary: 募集を更新する
-      operationId: patch-recruitments-id
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: ../models/Recruitment.v1.yaml
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                recruitment:
-                  type: object
-                  properties:
-                    title:
-                      type: string
-                      example: 三度の飯よりReact！そんなGeekなあなたへ
-                    department_id:
-                      type: string
-                      format: uuid
-                    occupation_id:
-                      type: string
-                      format: uuid
-                    industry_id:
-                      type: string
-                      format: uuid
-                    workplace_id:
-                      type: string
-                      format: uuid
-                    job_description:
-                      type: string
-                      example: 新規事業のフロントサイドエンジニア
-                    work_conditions:
-                      type: string
-                      example: 保険・交通費とか諸々
-                    qualification_requirement:
-                      type: string
-                      example: ・大卒以上　・40歳未満
-                    is_public:
-                      type: boolean
-                      default: 'true'
-                      example: 'true'
-    delete:
-      summary: 募集を削除する
-      operationId: delete-recruitments-id
-      responses:
-        '204':
-          description: No Content
   '/accounts/{account_id}/interested_lists':
     parameters:
       - schema:
@@ -545,16 +492,8 @@ paths:
                     recruitment_id:
                       type: string
                       format: uuid
-                    motivation:
-                      type: string
-                      enum:
-                        - immediately
-                        - hear_the_story
-                        - just_curious
-                      example: immediately
                   required:
                     - recruitment_id
-                    - motivation
         description: ''
   '/work_histories/{id}':
     parameters:

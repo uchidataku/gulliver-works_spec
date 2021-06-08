@@ -263,9 +263,6 @@ paths:
                     title:
                       type: string
                       example: 三度の飯よりReact！そんなGeekなあなたへ
-                    department_id:
-                      type: string
-                      format: uuid
                     occupation_id:
                       type: string
                       format: uuid
@@ -284,10 +281,6 @@ paths:
                     qualification_requirement:
                       type: string
                       example: ・大卒以上　・40歳未満
-                    is_public:
-                      type: boolean
-                      default: 'true'
-                      example: 'true'
                     status:
                       type: string
                       enum:
@@ -295,14 +288,9 @@ paths:
                         - inactive
                         - draft
                       example: active
-                    employment_status_ids:
-                      type: array
-                      items:
-                        type: string
-                        format: uuid
+                      default: active
                   required:
                     - title
-                    - is_public
                     - status
   '/recruitments/{id}':
     parameters:
