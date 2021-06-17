@@ -4,13 +4,13 @@ NameSpaceごとにモックサーバーを立ててあります。
 
 ## NameSpace
 ### Application
-Origin: 'https://910f8d82-868e-4ac2-981d-af7621255ff8.mock.pstmn.io'
+Origin: 'https://fed79e73-d600-4c5a-8f45-dfa52cb9d13a.mock.pstmn.io'
 ### Enterprise
-Origin: 'https://149863f0-f745-4984-aed5-fba036d550d1.mock.pstmn.io'
+Origin: 'https://39433c59-d57e-4fd0-8e4e-11ca5ddf1743.mock.pstmn.io'
 ### Auth
-Origin: 'https://1134932e-a443-49eb-8dd6-764a9db8d7bc.mock.pstmn.io'
+Origin: 'https://402e0aa6-6ca5-4ec6-b12f-4e0f2d7dc9d3.mock.pstmn.io'
 ### EnterpriseAuth
-Origin: 'https://78375609-8394-40e4-87c6-770a646d6a2f.mock.pstmn.io'
+Origin: 'https://6915e998-6c2b-4bc0-a07b-d9fee6165b5d.mock.pstmn.io'
 
 ## Exp
 Applicationのエンドポイントで「都道府県一覧一覧を取得する」の場合、
