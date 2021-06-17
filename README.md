@@ -14,7 +14,7 @@ Origin: 'https://6915e998-6c2b-4bc0-a07b-d9fee6165b5d.mock.pstmn.io'
 
 ## Exp
 Applicationのエンドポイントで「都道府県一覧一覧を取得する」の場合、
-`GET https://910f8d82-868e-4ac2-981d-af7621255ff8.mock.pstmn.io/prefectures`
+`GET https://fed79e73-d600-4c5a-8f45-dfa52cb9d13a.mock.pstmn.io/prefectures`
 で以下のレスポンスが返ってくる。
 
 {
