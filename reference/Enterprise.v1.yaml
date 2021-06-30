@@ -678,12 +678,28 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ../models/Employee.v1.yaml
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                employee:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      format: email
     delete:
       summary: 従業員を削除する
       operationId: delete-employees-id
       responses:
-        '200':
-          description: OK
+        '204':
+          description: No Content
   '/companies/{company_id}/employees':
     parameters:
       - schema:

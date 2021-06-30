@@ -46,6 +46,18 @@ paths:
               schema:
                 $ref: ../models/Account.v1.yaml
       operationId: patch-accounts-id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                account:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      format: email
     delete:
       summary: アカウントを削除する
       tags:
