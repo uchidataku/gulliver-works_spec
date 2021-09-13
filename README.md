@@ -8,7 +8,7 @@ Origin: 'https://fed79e73-d600-4c5a-8f45-dfa52cb9d13a.mock.pstmn.io'
 ### Enterprise
 Origin: 'https://39433c59-d57e-4fd0-8e4e-11ca5ddf1743.mock.pstmn.io'
 ### Auth
-Origin: 'https://402e0aa6-6ca5-4ec6-b12f-4e0f2d7dc9d3.mock.pstmn.io'
+Origin: 'https://6a64a158-9913-44ab-8b6f-3e7e5422dcf1.mock.pstmn.io'
 ### EnterpriseAuth
 Origin: 'https://6915e998-6c2b-4bc0-a07b-d9fee6165b5d.mock.pstmn.io'
 
